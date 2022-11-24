@@ -170,6 +170,7 @@ function getSelections(selections: Selection[]) {
     const selObj: any = {}
 
     selections.forEach((selection) => {
+        console.log('Selection:', selection);
         const selectionHasAlias = selection.alias
         const selectionName = selectionHasAlias ? selection.alias.value : selection.name.value
         if (selection.selectionSet) {
